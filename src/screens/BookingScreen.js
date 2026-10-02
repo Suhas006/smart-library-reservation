@@ -31,7 +31,7 @@ export default function BookingScreen() {
   const handleConfirm = async () => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://10.58.39.195:5000/api/book', {
+      const response = await fetch('https://smart-library-reservation.onrender.com/api/book', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

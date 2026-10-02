@@ -10,7 +10,7 @@ export default function SeatMapScreen({ navigation }) {
   useEffect(() => {
     const fetchSeats = async () => {
       try {
-        const response = await fetch('http://10.58.39.195:5000/api/seats');
+        const response = await fetch('https://smart-library-reservation.onrender.com/api/seats');
         const data = await response.json();
         setSeats(data);
       } catch (error) {

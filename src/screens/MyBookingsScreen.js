@@ -9,7 +9,7 @@ export default function MyBookingsScreen({ navigation }) {
   useEffect(() => {
     const fetchReservations = async () => {
       try {
-        const response = await fetch('http://10.58.39.195:5000/api/reservations');
+        const response = await fetch('https://smart-library-reservation.onrender.com/api/reservations');
         const text = await response.text();
         try {
           const data = JSON.parse(text);
